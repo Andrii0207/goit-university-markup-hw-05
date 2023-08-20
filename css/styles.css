@@ -615,10 +615,10 @@ button {
   align-items: baseline;
 }
 
-.footer-logo-social-wrapper {
+/* .footer-logo-social-wrapper {
   display: flex;
   align-items: baseline;
-}
+} */
 
 .footer-link {
   display: inline-block;
@@ -782,7 +782,7 @@ button {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 24px 24px;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
