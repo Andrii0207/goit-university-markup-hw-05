@@ -503,16 +503,16 @@
           Leave your contacts and we will call you back
         </p>
         <form>
-          <div class="modal-label-wrapper">
+          <div class="modal-input-wrapper">
             <label class="modal-input-label" for="user-name"
               >Name
               <!-- <span class="modal-input-wrapper"></span> -->
             </label>
-            <div class="modal-input-icon-wrapper">
+            <div class="modal-icon-wrapper">
               <input
                 class="input-user-info"
                 type="text"
-                name="user_name"
+                name="user-name"
                 id="user-name"
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
                 title="Your name"
@@ -523,12 +523,12 @@
               </svg>
             </div>
           </div>
-          <div class="modal-label-wrapper">
+          <div class="modal-input-wrapper">
             <label class="modal-input-label" for="user-phone"
               >Phone
               <!-- <span class="modal-input-wrapper"></span> -->
             </label>
-            <div class="modal-input-icon-wrapper">
+            <div class="modal-icon-wrapper">
               <input
                 class="input-user-info"
                 type="tel"
@@ -543,12 +543,12 @@
               </svg>
             </div>
           </div>
-          <div class="modal-label-wrapper">
+          <div class="modal-input-wrapper">
             <label class="modal-input-label" for="user-email"
               >Email
               <!-- <span class="modal-input-wrapper"></span> -->
             </label>
-            <div class="modal-input-icon-wrapper">
+            <div class="modal-icon-wrapper">
               <input
                 class="input-user-info"
                 type="email"
@@ -561,28 +561,39 @@
               </svg>
             </div>
           </div>
-          <label class="modal-input-label">
-            Comment
+          <div class="modal-comment-wrapper">
+            <label class="modal-input-label" for="user-comment"> Comment</label>
             <textarea
               class="input-user-comment"
               name="user_comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </label>
-          <label class="modal-checkbox-accept-policy-label">
+          </div>
+          <div>
             <input
-              class="modal-checkbox-accept-policy"
+              class="modal-checkbox-accept-policy visually-hidden"
               type="checkbox"
               name="accept-policy"
+              id="user-privacy"
+              value="true"
               title="You should accept private policy before"
               required
             />
-            <svg class="modal-checkbox-own-checkbox" width="10" height="8">
-              <use href="./images/icons.svg#checkbox-icon"></use>
-            </svg>
-            I accept the terms and conditions of the&nbsp;
-            <a class="modal-policy" href="" target="_blank">Privacy Policy</a>
-          </label>
+            <label
+              class="modal-checkbox-accept-policy-label"
+              for="user-privacy"
+            >
+              I accept the terms and conditions of the&nbsp;
+              <a class="modal-policy" href="" target="_blank">Privacy Policy</a>
+              <span class="modal-own-heckbox">
+                <svg class="modal-checkbox-own-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox-icon"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>

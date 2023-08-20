@@ -834,7 +834,7 @@ button {
   color: var(--navyblue-color);
 }
 
-.modal-label-wrapper {
+.modal-input-wrapper {
   margin-bottom: 8px;
 }
 
@@ -859,7 +859,8 @@ button {
   border-radius: 4px;
   outline-offset: 2px;
   outline-color: transparent;
-  border: 1px solid var(--navyblue-color, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -867,11 +868,7 @@ button {
   border-color: var(--iris-color);
 }
 
-.input-user-info:focus + .modal-user-icon {
-  fill: var(--iris-color);
-}
-
-.modal-input-icon-wrapper {
+.modal-icon-wrapper {
   display: block;
   position: relative;
 }
@@ -881,6 +878,11 @@ button {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-user-info:focus + .modal-user-icon {
+  fill: var(--iris-color);
 }
 
 .input-user-comment {
@@ -889,40 +891,50 @@ button {
   padding: 8px 16px;
   margin-bottom: 16px;
   font-size: 18px;
-
   resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
   border-radius: 4px;
-  border: 1px solid var(--navyblue-color, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline-color: transparent;
+
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-user-comment:focus {
   border-color: var(--iris-color);
   outline-offset: 2px;
-  outline-color: transparent;
 }
 
 .input-user-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 
-.modal-checkbox-own-checkbox {
-  display: inline;
+.modal-own-heckbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   padding: 2px;
   margin-right: 8px;
   cursor: pointer;
-  border: 1px solid var(--navyblue-color, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-accept-policy-label {
-  display: flex;
+  display: block;
   align-items: center;
   margin-bottom: 24px;
   font-size: 12px;
@@ -934,9 +946,6 @@ button {
 .modal-checkbox-accept-policy {
   position: absolute;
   appearance: none;
-}
-
-.modal-checkbox-accept-policy {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
