@@ -834,12 +834,19 @@ button {
   color: var(--navyblue-color);
 }
 
-.modal-label-input-wrapper {
+.modal-label-wrapper {
   margin-bottom: 8px;
 }
 
 .modal-input-label {
+  display: block;
   margin-bottom: 4px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--lightslate-color);
 }
 
 .input-user-info {
@@ -864,7 +871,7 @@ button {
   fill: var(--iris-color);
 }
 
-.modal-label-input-wrapper {
+.modal-input-icon-wrapper {
   display: block;
   position: relative;
 }
