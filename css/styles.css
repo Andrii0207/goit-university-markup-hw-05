@@ -911,7 +911,7 @@ button {
   fill: transparent;
 }
 
-.modal-checkbox-accept-privacy-label {
+.modal-checkbox-accept-policy-label {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
@@ -921,26 +921,26 @@ button {
   color: var(--lightslate-color);
 }
 
-.modal-checkbox-accept-privacy {
+.modal-checkbox-accept-policy {
   position: absolute;
   appearance: none;
 }
 
-.modal-checkbox-accept-privacy {
+.modal-checkbox-accept-policy {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox-accept-privacy:checked + .modal-checkbox-own-checkbox {
+.modal-checkbox-accept-policy:checked + .modal-checkbox-own-checkbox {
   background-color: var(--primary-accent-color);
   fill: var(--cloud-color);
 }
 
-.modal-checkbox-accept-privacy:focus + .modal-checkbox-own-checkbox {
+.modal-checkbox-accept-policy:focus + .modal-checkbox-own-checkbox {
   outline: 1px solid var(--iris-color);
 }
 
-.modal-privacy-link {
+.modal-policy-link {
   color: var(--iris-color);
 }
 
