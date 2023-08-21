@@ -402,10 +402,6 @@ button {
 
 /* ======= CUSTOMERS ======= */
 
-/* .customers-wrapper {
-  padding: 60px 0;
-} */
-
 .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -614,11 +610,6 @@ button {
   justify-content: space-between;
   align-items: baseline;
 }
-
-/* .footer-logo-social-wrapper {
-  display: flex;
-  align-items: baseline;
-} */
 
 .footer-link {
   display: inline-block;
