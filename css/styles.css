@@ -963,7 +963,9 @@ button {
   fill: var(--cloud-color);
 }
 
-.modal-checkbox-accept-policy:focus + .modal-checkbox-own-checkbox {
+.modal-checkbox-accept-policy:focus
+  + .modal-checkbox-accept-policy-label
+  > .modal-own-checkbox-wrapper {
   outline: 1px solid var(--iris-color);
 }
 
