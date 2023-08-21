@@ -687,26 +687,36 @@ button {
 
 .subscribe-title {
   margin-bottom: 16px;
-
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-white-color);
 }
 
-.subscribe-input-email {
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-input {
   width: 264px;
   height: 40px;
-  padding: 8px 16px;
-  margin-right: 24px;
-  background-color: var(--navyblue-color);
+  padding-left: 16px;
+  background-color: transparent;
 
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  outline: none;
   border-radius: 4px;
   border: 1px solid var(--secondary-white-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--secondary-white-color);
 }
 
-.subscribe-input-email::placeholder {
+.subscribe-input::placeholder {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -715,36 +725,34 @@ button {
   color: var(--secondary-white-color);
 }
 
-.subscribe-elements-wrapper {
-  display: flex;
-}
-
-.subscribe-user-btn-submit {
+.subscribe-btn-submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 16px;
   padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
   border-radius: 4px;
   border-style: none;
-  background: var(--iris-color);
-
-  color: var(--secondary-white-color);
-  text-align: center;
+  cursor: pointer;
+  background-color: var(--iris-color);
 
   font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--secondary-white-color);
 }
 
-.subscribe-user-btn-submit:hover,
-.subscribe-user-btn-submit:focus {
+.subscribe-btn-submit:hover,
+.subscribe-btn-submit:focus {
   background-color: var(--primary-accent-color);
 }
 
 .subscribe-btn-icon {
+  margin-left: 16px;
   fill: var(--secondary-white-color);
 }
 
